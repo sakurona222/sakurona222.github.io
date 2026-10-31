@@ -94,10 +94,17 @@ include:
 exclude:
 ignore:
 
+# Search
+## Anzhiyu 本地搜索读取的索引文件路径
+search:
+  path: search.json
+  field: post
+  content: true
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: butterfly
+theme: anzhiyu
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
