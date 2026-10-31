@@ -16,6 +16,6 @@ type: about
 
 ## 联系方式
 
-- GitHub：[kuro](https://github.com/kuro)
+- GitHub：[sakurona222](https://github.com/sakurona222)
 
 > 本页内容仍在完善中。
