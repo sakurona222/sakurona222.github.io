@@ -1,0 +1,156 @@
+/* ==========================================================================
+   蔚蓝档案风格皮肤（BA Theme Skin）
+   参考：https://github.com/sf-yuzifu/BA-style-homepage
+   说明：只覆盖配色与细节，不改主题布局结构。
+         需要回退时删除本文件并移除 _config.anzhiyu.yml 中 inject 的引用即可。
+   ========================================================================== */
+
+:root {
+  --ba-navy: #003153;
+  --ba-navy-deep: #02182b;
+  --ba-cyan: #77deff;
+  --ba-cyan-deep: #0a84c9;
+  --ba-pale: #daeef5;
+  --ba-yellow: #ffe433;
+  --ba-card: #f0f0f0;
+  --ba-radius: 14px;
+}
+
+/* 覆盖主题的派生色，避免作者卡等处残留默认蓝色 */
+html[data-theme="light"],
+html:not([data-theme="dark"]) {
+  --anzhiyu-theme-deep: #00223b;
+  --anzhiyu-theme-op-deep: rgba(0, 49, 83, 0.867);
+  --anzhiyu-theme-op: rgba(0, 49, 83, 0.137);
+}
+
+html[data-theme="dark"] {
+  --anzhiyu-theme-deep: #0a84c9;
+  --anzhiyu-theme-op-deep: rgba(119, 222, 255, 0.867);
+  --anzhiyu-theme-op: rgba(119, 222, 255, 0.137);
+}
+
+/* 作者卡片：海军蓝到青色的渐变 */
+#aside-content > .card-widget.card-info::before {
+  background: linear-gradient(115deg, #003153, #0a84c9, #003153, #0a84c9) !important;
+}
+
+/* 首页分类卡：海军蓝渐变 */
+#home_top a.categoryButton.blue {
+  background: linear-gradient(to right, #003153, #0a84c9) !important;
+  box-shadow: 0 6px 18px rgba(0, 49, 83, 0.28) !important;
+}
+
+/* 卡片：大圆角 + 青色悬停光晕 */
+#recent-posts > .recent-post-item,
+.card-widget,
+#aside-content .card-widget {
+  border-radius: var(--ba-radius) !important;
+  border: 1px solid rgba(0, 49, 83, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+}
+
+#recent-posts > .recent-post-item:hover,
+.card-widget:hover {
+  box-shadow: 0 8px 24px rgba(119, 222, 255, 0.35) !important;
+  transform: translateY(-2px);
+}
+
+/* 文章标题下的黄色短线，对应 BA 的标题装饰 */
+#article-container h2 {
+  position: relative;
+  border-top: none !important;
+  padding-top: 1rem;
+  color: var(--ba-navy);
+}
+
+#article-container h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 8px;
+  background: var(--ba-yellow);
+  border-radius: 2px;
+}
+
+html[data-theme="dark"] #article-container h2 {
+  color: var(--ba-cyan);
+}
+
+/* 按钮：BA 标志性的 -10° 倾斜 */
+.button--animated,
+#pagination .page-number,
+#pagination .extend {
+  border-radius: 6px !important;
+  transform: skewX(-10deg);
+  transition: transform 0.15s ease, filter 0.15s ease !important;
+}
+
+.button--animated:hover,
+#pagination .page-number:hover,
+#pagination .extend:hover {
+  filter: brightness(1.05);
+}
+
+.button--animated:active,
+#pagination .page-number:active,
+#pagination .extend:active {
+  transform: skewX(-10deg) scale(0.94);
+}
+
+/* 焦点光环与文本选中色 */
+:focus-visible {
+  outline: 2px solid var(--ba-cyan);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--ba-cyan);
+  color: var(--ba-navy);
+}
+
+/* 正文链接悬停 */
+#article-container a:hover {
+  color: var(--ba-cyan-deep);
+  text-decoration-color: var(--ba-yellow);
+}
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+  background: var(--ba-cyan) !important;
+  border-radius: 8px;
+}
+
+/* 日间模式：浅蓝渐变底 */
+html[data-theme="light"] body {
+  background-image: linear-gradient(160deg, #f4fbff 0%, #ffffff 45%, #e6f6ff 100%);
+  background-attachment: fixed;
+}
+
+/* 夜间模式：深蓝底 */
+html[data-theme="dark"] body {
+  background-color: var(--ba-navy-deep);
+}
+
+/* 侧边栏头像外圈青色光晕 */
+#aside-content .card-info .avatar-img img,
+#aside-content .card-info img.avatar-img {
+  box-shadow: 0 0 0 3px var(--ba-cyan), 0 0 18px rgba(119, 222, 255, 0.55);
+}
+
+/* 导航当前项：黄色下划线 */
+#nav .menus_item a.active {
+  position: relative;
+}
+
+#nav .menus_item a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 3px;
+  background: var(--ba-yellow);
+  border-radius: 2px;
+}
