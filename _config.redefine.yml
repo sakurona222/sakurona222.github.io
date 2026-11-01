@@ -180,8 +180,8 @@ home_banner:
     links:
       - icon: github # can also be "fa-brands fa-github"
         url: https://github.com/sakurona222
-      - icon: email
-        url: mailto:sakurona222@gmail.com
+      - icon: fa-solid fa-envelope
+        url: https://mail.google.com/mail/?view=cm&fs=1&to=sakurona222@gmail.com
     # Social links with QRcode drawers
     qrs:
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -417,7 +417,7 @@ footer:
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
-  customize: '邮箱：<a href="mailto:sakurona222@gmail.com">sakurona222@gmail.com</a>'
+  customize: 'Contact me: <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sakurona222@gmail.com">sakurona222@gmail.com</a>'
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
     enable: false # Whether to enable

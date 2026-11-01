@@ -17,4 +17,4 @@ type: about
 ## 联系方式
 
 - GitHub：[sakurona222](https://github.com/sakurona222)
-- Email：[sakurona222@gmail.com](mailto:sakurona222@gmail.com)
+- Email：[sakurona222@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=sakurona222@gmail.com)
