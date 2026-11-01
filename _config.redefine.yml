@@ -413,7 +413,7 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: '<span style="color:#77deff">♥</span>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: # 留空则只显示当前年份
+  start: 2026/10/31 00:00:00
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
