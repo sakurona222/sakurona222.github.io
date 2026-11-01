@@ -435,6 +435,8 @@ inject:
   head:
     # 导航栏：白色背景、深蓝文字、Logo 保持比例并加大
     - '<style>.logo-image{height:52px!important;width:auto!important}.logo-image img{width:auto!important;height:100%!important;object-fit:contain;border-radius:0!important}.logo-title{display:none!important}.navbar-container{background:#fff!important;box-shadow:0 1px 0 rgba(0,49,83,.08)!important}.navbar-container .navbar-list .navbar-item,.navbar-container .navbar-list .navbar-item a,.navbar-container .logo-title,.navbar-container .logo-title h1,.navbar-container .icon-item,.navbar-container .icon-item i,.navbar-container .navbar-bar-middle{color:#003153!important}.navbar-container .navbar-bar-middle{background:#003153!important}.navbar-container .navbar-list .navbar-item a:hover{color:#0a84c9!important}.footer,.footer *{font-family:"Cascadia Code","Cascadia Mono",Consolas,"Microsoft YaHei",monospace!important}.navbar-content{max-width:100%!important}@media (max-width:768px){.logo-image{height:40px!important}}</style>'
+    # 加密插件初始化脚本依赖主题构建端的 log / ensurePrefix，浏览器里补上，避免模块报错
+    - '<script>window.log=window.log||{info:function(){},warn:function(){},error:function(){},debug:function(){}};window.ensurePrefix=window.ensurePrefix||function(s){return s;};</script>'
   # Inject custom footer html code
   footer:
     # BA 风格点击圆环与碎片特效
