@@ -216,6 +216,9 @@ navbar:
     说说:
       path: /shuoshuo/
       icon: fa-regular fa-comment # can be empty
+    留言板:
+      path: /guestbook/
+      icon: fa-regular fa-comments # can be empty
     关于:
       path: /about/
       icon: fa-solid fa-circle-info # can be empty
@@ -251,6 +254,9 @@ home:
       说说:
         path: /shuoshuo/
         icon: fa-regular fa-comment # can be empty
+      留言板:
+        path: /guestbook/
+        icon: fa-regular fa-comments # can be empty
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
@@ -346,7 +352,7 @@ comment:
   # Whether to enable comment
   enable: false
   # Comment system
-  system: waline # waline, gitalk, twikoo, giscus, utterances, artalk
+  system: giscus # waline, gitalk, twikoo, giscus, utterances, artalk
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -371,15 +377,15 @@ comment:
       region: # Twikoo region. can be empty
     # Giscus comment system. See https://giscus.app/
     giscus:
-      repo: # Github repository name e.g. EvanNotFound/hexo-theme-redefine
-      repo_id: # Github repository id
-      category: # Github discussion category
-      category_id: # Github discussion category id
+      repo: sakurona222/sakurona222.github.io # Github repository name
+      repo_id: R_kgDOVd9zpQ # Github repository id
+      category: General # Github discussion category
+      category_id: DIC_kwDOVd9zpc4DKIuV # Github discussion category id
       mapping: pathname # Which value to use as the unique identifier for the page. e.g. pathname, url, title, og:title. DO NOT USE og:title WITH PJAX ENABLED since pjax will not update og:title when the page changes
       strict: 0 # Whether to enable strict mode. e.g. 0, 1
       reactions_enabled: 1 # Whether to enable reactions. e.g. 0, 1
       emit_metadata: 0 # Whether to emit metadata. e.g. 0, 1
-      lang: en # Giscus language. e.g. en, zh-CN, zh-TW
+      lang: zh-CN # Giscus language. e.g. en, zh-CN, zh-TW
       input_position: bottom # Place the comment box above/below the comments. e.g. top, bottom
       loading: lazy # Load the comments lazily
     # Artalk comment system. See https://artalk.js.org/
