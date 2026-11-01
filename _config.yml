@@ -101,6 +101,10 @@ search:
   field: post
   content: true
 
+# Article background
+## 文章页默认背景，可在文章 front-matter 用 background 覆盖
+article_background: /img/ba/ba-bg-sky.jpg
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
