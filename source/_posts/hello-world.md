@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: 你好，KuroArchive
 date: 2026-10-31 17:32:04
 tags:
   - 站点说明
@@ -7,43 +7,37 @@ categories:
   - 随笔
 ---
 
-这是本站的第一篇文章，用来验证主题的渲染效果：标题、目录、代码高亮、深色模式和标签分类。
+这里是 KuroArchive，一个记录兴趣和日常的小站。
 
 <!-- more -->
 
-## 为什么写博客
+## 为什么叫 Archive
 
-把平时在嵌入式开发中踩过的坑、验证过的方案记录下来，既方便自己回查，也希望能帮到遇到同样问题的人。
+Archive 是「档案」的意思。想把看过的、玩过的、折腾过的东西慢慢存下来，时间久了就是一份属于自己的档案。
+
+## 这里会写什么
+
+- 看番和玩游戏的随想
+- 软件、工具的使用记录
+- 偶尔的一些碎碎念
 
 ## 代码块测试
 
-下面这段是 STM32 里常见的 GPIO 初始化片段，用于检查代码高亮是否正常：
+留一段简单的代码，确认主题的代码高亮正常：
 
-```c
-/**
- * @brief  初始化 LED 引脚
- * @param  无
- * @retval 无
- */
-void LED_Init(void)
-{
-    GPIO_InitTypeDef gpio = {0};
+```js
+const site = {
+  name: "KuroArchive",
+  mood: "☁️",
+};
 
-    __HAL_RCC_GPIOC_CLK_ENABLE();
-
-    gpio.Pin   = GPIO_PIN_13;
-    gpio.Mode  = GPIO_MODE_OUTPUT_PP;
-    gpio.Pull  = GPIO_NOPULL;
-    gpio.Speed = GPIO_SPEED_FREQ_LOW;
-
-    HAL_GPIO_Init(GPIOC, &gpio);
-}
+console.log(`Welcome to ${site.name}`);
 ```
 
 ## 接下来
 
-- 补充「关于」页面的个人介绍
-- 按主题整理历史笔记，逐步迁移到博客
-- 视需要再接入评论系统
+- 慢慢把想写的内容搬进来
+- 调整页面细节
+- 也许会加评论和相册
 
-欢迎常来看看。
+谢谢你来。
