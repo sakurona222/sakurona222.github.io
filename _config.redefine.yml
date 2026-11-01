@@ -350,7 +350,7 @@ articles:
 # Docs: https://redefine-docs.ohevan.com/posts/comment
 comment:
   # Whether to enable comment
-  enable: false
+  enable: true
   # Comment system
   system: giscus # waline, gitalk, twikoo, giscus, utterances, artalk
   # System configuration
