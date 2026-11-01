@@ -409,9 +409,9 @@ footer:
   # Show website running time
   runtime: true # show website running time or not
   # Icon in footer, write fontawesome icon code here
-  icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
+  icon: '<span style="color:#77deff">♥</span>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2026/10/31 00:00:00
+  start: # 留空则只显示当前年份
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
@@ -432,7 +432,7 @@ inject:
   # Inject custom head html code
   head:
     # 导航栏：白色背景、深蓝文字、Logo 保持比例并加大
-    - '<style>.logo-image{height:52px!important;width:auto!important}.logo-image img{width:auto!important;height:100%!important;object-fit:contain;border-radius:0!important}.logo-title{display:none!important}.navbar-container{background:#fff!important;box-shadow:0 1px 0 rgba(0,49,83,.08)!important}.navbar-container .navbar-list .navbar-item,.navbar-container .navbar-list .navbar-item a,.navbar-container .logo-title,.navbar-container .logo-title h1,.navbar-container .icon-item,.navbar-container .icon-item i,.navbar-container .navbar-bar-middle{color:#003153!important}.navbar-container .navbar-bar-middle{background:#003153!important}.navbar-container .navbar-list .navbar-item a:hover{color:#0a84c9!important}.footer,.footer *{font-family:"Cascadia Code","Cascadia Mono",Consolas,"Microsoft YaHei",monospace!important}@media (max-width:768px){.logo-image{height:40px!important}}</style>'
+    - '<style>.logo-image{height:52px!important;width:auto!important}.logo-image img{width:auto!important;height:100%!important;object-fit:contain;border-radius:0!important}.logo-title{display:none!important}.navbar-container{background:#fff!important;box-shadow:0 1px 0 rgba(0,49,83,.08)!important}.navbar-container .navbar-list .navbar-item,.navbar-container .navbar-list .navbar-item a,.navbar-container .logo-title,.navbar-container .logo-title h1,.navbar-container .icon-item,.navbar-container .icon-item i,.navbar-container .navbar-bar-middle{color:#003153!important}.navbar-container .navbar-bar-middle{background:#003153!important}.navbar-container .navbar-list .navbar-item a:hover{color:#0a84c9!important}.footer,.footer *{font-family:"Cascadia Code","Cascadia Mono",Consolas,"Microsoft YaHei",monospace!important}.navbar-content{max-width:100%!important}@media (max-width:768px){.logo-image{height:40px!important}}</style>'
   # Inject custom footer html code
   footer:
     -
