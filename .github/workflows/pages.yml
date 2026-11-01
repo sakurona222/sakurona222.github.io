@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # 加密文章的密码，在仓库 Settings → Secrets and variables → Actions 中配置
+      POST_PASSWORD: ${{ secrets.POST_PASSWORD }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
