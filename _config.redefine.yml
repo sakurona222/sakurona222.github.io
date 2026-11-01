@@ -27,7 +27,7 @@ defaults:
   # Favicon
   favicon: /img/ba/avatar-hoshino-square.png
   # Site logo
-  logo: /img/ba/ba-icon.png
+  logo: /img/ba/logo-kuroarchive.png
   # Site avatar
   avatar: /img/ba/avatar-hoshino-square.png
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -134,10 +134,11 @@ home_banner:
     light: /img/ba/ba-bg-sky.jpg # light mode
     dark: /img/ba/ba-bg-sky.jpg # dark mode
   # Home banner title
-  title: Kuro's Blog
+  # 用零宽空格让标题渲染为空白，同时避免回退到站点描述
+  title: "​"
   # Home banner subtitle
   subtitle:
-    text: ["嵌入式 / 工业通信 / 工程笔记", "记录 STM32、EtherNet/IP 与工程实践"] # subtitle text, array
+    text: ["嵌入式 / 工业通信 / 工程笔记", "一切奇迹的起点"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
