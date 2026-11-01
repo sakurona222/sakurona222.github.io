@@ -13,7 +13,8 @@ info:
   # Site title
   title: Kuro's Blog
   # Site subtitle
-  subtitle: 嵌入式 / 工业通信 / 工程笔记
+  # 零宽空格：避免主题回退到英文默认副标题
+  subtitle: "​"
   # Author name
   author: kuro
   # Site URL
@@ -138,7 +139,7 @@ home_banner:
   title: "​"
   # Home banner subtitle
   subtitle:
-    text: ["嵌入式 / 工业通信 / 工程笔记", "一切奇迹的起点"] # subtitle text, array
+    text: ["一切奇迹的起点"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
