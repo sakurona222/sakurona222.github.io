@@ -419,8 +419,8 @@ inject:
   enable: true
   # Inject custom head html code
   head:
-    # 修正横版 Logo 被压扁，并隐藏导航栏站名文字
-    - '<style>.logo-image{width:auto!important}.logo-image img{width:auto!important;height:100%!important;object-fit:contain}.logo-title{display:none!important}</style>'
+    # 导航栏：白色背景、深蓝文字、Logo 保持比例并加大
+    - '<style>.logo-image{height:52px!important;width:auto!important}.logo-image img{width:auto!important;height:100%!important;object-fit:contain;border-radius:0!important}.logo-title{display:none!important}.navbar-container{background:#fff!important;box-shadow:0 1px 0 rgba(0,49,83,.08)!important}.navbar-container .navbar-list .navbar-item,.navbar-container .navbar-list .navbar-item a,.navbar-container .logo-title,.navbar-container .logo-title h1,.navbar-container .icon-item,.navbar-container .icon-item i,.navbar-container .navbar-bar-middle{color:#003153!important}.navbar-container .navbar-bar-middle{background:#003153!important}.navbar-container .navbar-list .navbar-item a:hover{color:#0a84c9!important}@media (max-width:768px){.logo-image{height:40px!important}}</style>'
   # Inject custom footer html code
   footer:
     -
